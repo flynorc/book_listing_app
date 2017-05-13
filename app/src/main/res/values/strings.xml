@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">07-BookListingApp</string>
+    <string name="search_term_hint">Search term</string>
+    <string name="search_button">Search!</string>
+    <string name="no_results_text">No results found with the current search string. Please provide a search string and click on search to start the search</string>
+    <string name="search_query_empty_toast">Please provide some text in search field</string>
+    <string name="back_to_list_button">Back to list</string>
+    <string name="no_internet_toast">It seems like you are without internet access at the moment, please try again later</string>
+</resources>
