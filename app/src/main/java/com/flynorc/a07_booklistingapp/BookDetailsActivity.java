@@ -75,7 +75,7 @@ public class BookDetailsActivity extends AppCompatActivity {
             //no need to check if urls[0] exists and it is not empty, because the only way to this activity is by clicking on list item
             //and each list item was created from the JSON response we got from books API and there will always be url argument passed
             String urlDisplay = urls[0];
-            return QueryUtils.getBookImageLink(urlDisplay);
+            return QueryUtils.getBookImageLink(urlDisplay, BookDetailsActivity.this);
         }
 
         protected void onPostExecute(String result) {
@@ -104,7 +104,7 @@ public class BookDetailsActivity extends AppCompatActivity {
         //fetch the image using a helper method from the QueryUtils class
         protected Bitmap doInBackground(String... urls) {
             String url = urls[0];
-            return QueryUtils.getImageFromUrl(url);
+            return QueryUtils.getImageFromUrl(url, BookDetailsActivity.this);
         }
 
         //hide spinner and show the image

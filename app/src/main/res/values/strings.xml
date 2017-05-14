@@ -6,4 +6,6 @@
     <string name="search_query_empty_toast">Please provide some text in search field</string>
     <string name="back_to_list_button">Back to list</string>
     <string name="no_internet_toast">It seems like you are without internet access at the moment, please try again later</string>
+    <string name="error_parsing_img_url">An error has occured while searching for image url. Please try again later.</string>
+    <string name="error_networking_operation">An error has occured while attempting to fetch the data from the network. Please try again later.</string>
 </resources>

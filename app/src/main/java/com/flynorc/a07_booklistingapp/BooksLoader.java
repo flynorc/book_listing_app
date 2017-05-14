@@ -12,9 +12,12 @@ import java.util.List;
 public class BooksLoader extends AsyncTaskLoader<List<Book>> {
 
     private String mUrl;
+    private Context mContext;
+
     public BooksLoader(Context context, String url) {
         super(context);
         mUrl = url;
+        mContext = context;
     }
 
     @Override
@@ -28,6 +31,6 @@ public class BooksLoader extends AsyncTaskLoader<List<Book>> {
         if (mUrl.isEmpty()) {
             return null;
         }
-        return QueryUtils.getBooksFromApi(mUrl);
+        return QueryUtils.getBooksFromApi(mUrl, mContext);
     }
 }
